@@ -1,26 +1,25 @@
-# Team Example 2022 Wiki
+# BASIS_China iGEM Wiki Repository
 
-This repository **MUST** contain all coding assets to generate your team's wiki (HTML, CSS, JavaScript, TypeScript, Python, etc).
+This page contains the basic information for the setup of our wiki page. You can find the full official iGEM requirements [here](https://competition.igem.org/deliverables/team-wiki). 
 
-Images, photos, icons and fonts **MUST** be stored on `static.igem.wiki` using [uploads.igem.org](https://uploads.igem.org), and Videos **must** be embedded from [iGEM Video Universe](https://video.igem.org).
+I cloned the [sample wiki](https://gitlab.igem.org/2022/example), and you can see the essential information below:
 
-For up-to-date requirements, resources, help and guidance, visit [competition.igem.org/deliverables/team-wiki](https://competition.igem.org/deliverables/team-wiki).
+***
+***
 
-## Getting started
+## How to edit
 
-You should probably only edit the files inside folders `static`, `wiki` and `wiki > pages`.
-1. Open the Web IDE
-1. Make the changes on the files you wish:
-    * For the menu, change the file [menu.html](wiki/menu.html)
-    * For the layout, change the file [layout.html](wiki/layout.html)
-    * For the pages, change the corresponding file in the foler [pages](wiki/pages)
-1. Review the changes you made
-1. Once you are done, save the changes by **committing** them to the *main branch* of the repository
-1. An automated script will build, test and deploy your wiki, which should take less than 30 seconds.
+> You should probably only edit the files inside folders `static`, `wiki` and `wiki > pages`.
+> 1. Open the Web IDE
+> 2. Make the changes on the files you wish:
+>     * For the menu, change the file [menu.html](wiki/menu.html)
+>     * For the layout, change the file [layout.html](wiki/layout.html)
+>     * For the pages, change the corresponding file in the folder [pages](wiki/pages)
+> 3. Review the changes you made
+> 4. Once you are done, save the changes by **committing** them to the *main branch* of the repository
+> 5. An automated script will build, test and deploy your wiki, which should take less than 30 seconds.
 
-## About this Template
-
-### Files
+## File layout
 
 The static assets are in the `static` directory. The layout and templates are in the `wiki` directory, and the pages live in the `wiki > pages` directory. Unless you are an experienced and/or adventurous human, you probably shouldn't change other files.
 
@@ -39,28 +38,3 @@ The static assets are in the `static` directory. The layout and templates are in
     |__ app.py              -> Python code managing your wiki
     |__ dependencies.txt    -> Software dependencies from the Python code
 
-### Technologies
-
-  * [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
-  * [Python](https://www.python.org): Programming language
-  * [Flask](https://palletsprojects.com/p/flask/): Python framework
-  * [Fronzen-Flask](https://pythonhosted.org/Frozen-Flask): Library that builds the wiki to be deployed as a static website
-  * [Bootstrap](https://getbootstrap.com/docs/5.0/components): CSS and JS components used
-
-### Building locally (advanced users)
-
-To work locally with this project, you'll have to follow the steps below:
-
-#### Install
-```bash
-git clone https://gitlab.igem.org/2022/example
-cd example
-python3 -m venv venv
-. venv/bin/activate
-pip install -r dependencies.txt
-```
-
-#### Execute
-```bash
-python app.py
-```
